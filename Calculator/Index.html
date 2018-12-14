@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="Calculator" style="background-color: cadetblue;padding: 10px;display:block; float:left;">
+<!--Text Input-->
+<input type="text" id="numA" /> <br><br>
+<input type="text" id="numB" /> <br><br>
+<input type="text" id="result" disabled="disabled" /> <br><br>
+
+<!--Button-->
+<input type="button" id="add" value="+" onclick="setResult(add(getValueA(), getValueB()));" />
+<input type="button" id="sub" value="-" onclick="setResult(sub(getValueA(), getValueB()));" />
+<input type="button" id="mul" value="x" onclick="setResult(mul(getValueA(), getValueB()));" />
+<input type="button" id="div" value=":" onclick="setResult(div(getValueA(), getValueB()));" />
+<input type="button" id="mod" value="%" onclick="setResult(mod(getValueA(), getValueB()));" />
+
+</div>
+</body>
+</html>
